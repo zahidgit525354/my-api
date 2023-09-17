@@ -7,6 +7,10 @@ app.get('/home', function(req, res) {
 
 })
 
+app.post('/create', function(req, res){
+    console,log("Got a POST Request");
+    res.send("Create Content");
+})
 // Create Server
 
 var Server = app.listen(3000, function(){
